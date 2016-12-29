@@ -1,0 +1,240 @@
+/*
+* html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+* Richard Clark (http://richclarkdesign.com)
+* http://cssreset.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+.stiff-chart-inner {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
+  .stiff-chart-inner ul {
+    list-style-type: none;
+    font-size: 0;
+    letter-spacing: 0;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    position: relative;
+    overflow: visible; }
+  .stiff-chart-inner li {
+    font-size: 16px;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    position: relative;
+    cursor: pointer; }
+
+.stiff-child {
+  display: none; }
+
+.tree-line {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+li .the-chart {
+  background-color: #fff; }
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden; }
+
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.chart-popover {
+  display: none; }
+
+.popover {
+  max-width: none;
+  width: 300px;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0; }
+
+.the-chart .total-child {
+  position: absolute;
+  display: inline;
+  right: 10px;
+  font-size: 12px;
+  bottom: -20px; }
+
+.connector {
+  position: relative;
+  overflow: visible; }
+
+.chart-vertical {
+  padding: 20px 0; }
+  .chart-vertical .stiff-chart-inner li {
+    display: inline-block;
+    padding: 0 10px; }
+  .chart-vertical .curve-tree {
+    height: 100px;
+    position: relative;
+    width: 100%; }
+  .chart-vertical .the-chart .total-child {
+    bottom: -22px; }
+  .chart-vertical .connector {
+    height: 100px; }
+  .chart-vertical .flip-you {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -khtml-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; }
+
+.chart-horizontal .stiff-chart-inner {
+  letter-spacing: 0;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .chart-horizontal .stiff-chart-inner li {
+    display: block;
+    padding: 20px 0; }
+
+.chart-horizontal .stiff-chart-level {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto; }
+
+.chart-horizontal .the-chart .total-child {
+  bottom: 0; }
+
+.chart-horizontal .connector {
+  width: 100px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto; }
+
+.chart-horizontal .flip-you {
+  transform: scaleY(-1);
+  -moz-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -khtml-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0; }
+
+/*# sourceMappingURL=maps/stiff-chart.css.map */

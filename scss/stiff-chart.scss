@@ -1,0 +1,93 @@
+@import "reset-html5";
+@import "micro-clearfix";
+
+.stiff-chart-inner {
+  transform-origin: 0 0;
+  position: relative;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  ul {
+    list-style-type: none;
+    font-size: 0;
+    letter-spacing: 0;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+  }
+
+  li {
+    font-size: 16px;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.stiff-child {
+  display: none;
+}
+
+.tree-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+li .the-chart {
+  background-color: #fff;
+}
+
+.svg-container { 
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; 
+  vertical-align: middle; 
+  overflow: hidden; 
+}
+
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chart-popover {
+  display: none;
+}
+
+.popover {
+  max-width: none;
+  width: 300px;
+  transform-origin: 0 0;
+}
+
+.popover-title {
+
+}
+
+.the-chart {
+  .total-child {
+    position: absolute;
+    display: inline;
+    right: 10px;
+    font-size: 12px;
+    bottom: -20px;
+  }
+}
+
+//connector and lines
+.connector {
+  position: relative;
+  overflow: visible;
+}
+
+
+@import "vertical";
+@import "horizontal";
