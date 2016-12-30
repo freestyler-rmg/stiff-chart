@@ -11,4 +11,8 @@
   border-radius: 5px;
   height: 100%; }
 
+.text-center {
+  text-align: center;
+  margin: 20px 0; }
+
 /*# sourceMappingURL=maps/custom.css.map */
