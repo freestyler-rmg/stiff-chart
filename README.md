@@ -1,5 +1,8 @@
 ### Stiff Chart
 stiff-chart.shtml, stiff-chart.css, stiffChart.js   
+
+[**Demo**](https://freestyler-rmg.github.io/)
+
 **Usage :**  
 ```html
 <div id="stiff-chart">
@@ -72,3 +75,7 @@ $(document).ready(function() {
 **childCounter** : show or hide child counter of a parent (default: true)  
 **activeClass** : css class name for customizing the element when it's active / opened (default: 'chart-active')  
 **boostrapPopover** : enable or disable popover. The popover is taken from Boostrap component, so you need to include the Bootstrap's plugin and styling. (default: false)  
+
+##### To-dos:
+- responsive
+- better zoom
