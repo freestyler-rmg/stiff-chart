@@ -1,8 +1,6 @@
 ### Stiff Chart
 stiff-chart.shtml, stiff-chart.css, stiffChart.js   
 
-[**Demo**](https://freestyler-rmg.github.io/)
-
 **Usage :**  
 ```html
 <div id="stiff-chart">
